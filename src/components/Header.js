@@ -60,7 +60,7 @@ const Header = (props) => {
   return (
     <Nav>
       <Logo>
-        <img src="/images/logo.svg" alt="logo" />
+        <img src="/images/playerlogo.png" alt="logo" />
       </Logo>
       {!username ? (
         <Login onClick={handleAuthentication}>Login</Login>
@@ -110,7 +110,7 @@ const Nav = styled.nav`
   left: 0;
   right: 0;
   height: 70px;
-  background-color: #090b13;
+  background-color: rgb(28, 29, 48);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,6 +153,8 @@ const NavMenu = styled.div`
       min-width: 20px;
       width: 20px;
       z-index: auto;
+      margin-right: 3px;
+      padding-bottom: 2px;
     }
     span {
       color: rgb(249, 249, 249);
@@ -187,9 +189,9 @@ const NavMenu = styled.div`
       }
     }
   }
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
-  } */
+  }
 `;
 
 const Login = styled.a`
